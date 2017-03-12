@@ -1,0 +1,42 @@
+*, *:before, *:after { box-sizing: border-box; }
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: #333;
+  font-size: 1.6rem;
+}
+
+.page {background: tomato;
+  height: 100vh;
+  /*height: calc(100vh - 4rem);*/
+  /*margin: 2rem;*/
+}
+
+#rot-game {
+  position: relative;
+  height: 100vh;
+  /*height: calc(100vh - 4rem);*/
+  /*height: 100vh;*/
+  background: #333;
+}
+
+#rot-display {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  min-height: 5rem;
+}
+
+#rot-display canvas {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}

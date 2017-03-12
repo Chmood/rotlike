@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript Roguelike</title>
+
+  <link rel='stylesheet' href='css/main.css'/>
+</head>
+<body>
+  <section class="page">
+
+    <div id="rot-game">
+      <div id="rot-display">
+        <!-- rot.js render -->
+      </div>
+      <div id="rot-ui">
+        <!-- <section class="rot-ui__bottom-bar">
+          Bottom bar
+        </section> -->
+      </div>
+    </div>
+
+  </section>
+
+  <!-- VENDOR -->
+  <script src="js/vendor/rot.min.new.js"></script>
+  <script src="js/vendor/sprintf.min.js"></script>
+
+  <!-- CONFIG-->
+  <script src="js/config/config.js"></script>
+
+  <!-- GAME -->
+  <script src="js/game.js"></script>
+  <script src="js/DOM.js"></script>
+
+  <!-- TOOLS -->
+  <script src="js/tools/utilities.js"></script>
+  <script src="js/tools/geometry.js"></script>
+
+  <!-- GLYPHS, ITEMS & ENTITIES -->
+  <script src="js/components/glyphs/glyph.js"></script>
+  <script src="js/components/glyphs/dynamicglyph.js"></script>
+
+  <script src="js/components/repository.js"></script>
+
+  <script src="js/components/items/item.js"></script>
+  <script src="js/components/items/itemmixins.js"></script>
+  <script src="js/config/items.js"></script>
+
+  <script src="js/components/entities/entity.js"></script>
+  <script src="js/components/entities/entitymixins.js"></script>
+  <script src="js/config/entities.js"></script>
+  <script src="js/components/tiles/tile.js"></script>
+
+  <!-- MAPS -->
+  <script src="js/maps/builder.js"></script>
+
+  <script src="js/maps/map.js"></script>
+  <script src="js/maps/maps/cave.js"></script>
+  <script src="js/maps/maps/bosscavern.js"></script>
+
+  <!-- SCREENS -->
+  <!-- Game Screens -->
+  <script src="js/screens/screen-start.js"></script>
+  <script src="js/screens/screen-play.js"></script>
+  <script src="js/screens/screen-win.js"></script>
+  <script src="js/screens/screen-lose.js"></script>
+
+  <!-- Play Screens -->
+  <script src="js/screens/play/handle-input.js"></script>
+  <script src="js/screens/play/render/render.js"></script>
+  <script src="js/screens/play/render/render-tiles.js"></script>
+  <script src="js/screens/play/render/render-ui.js"></script>
+
+  <script src="js/screens/play/subscreens/screen-target-based.js"></script>
+  <script src="js/screens/play/subscreens/screen-look.js"></script>
+
+  <script src="js/screens/play/subscreens/screen-gain-stat.js"></script>
+  <script src="js/screens/play/subscreens/screen-help.js"></script>
+
+  <!-- Item List Screens -->
+  <script src="js/screens/play/itemlist/screen-item-list.js"></script>
+
+  <script src="js/screens/play/itemlist/screen-inventory.js"></script>
+  <script src="js/screens/play/itemlist/screen-pickup.js"></script>
+  <script src="js/screens/play/itemlist/screen-drop.js"></script>
+  <script src="js/screens/play/itemlist/screen-eat.js"></script>
+  <script src="js/screens/play/itemlist/screen-wield.js"></script>
+  <script src="js/screens/play/itemlist/screen-wear.js"></script>
+  <script src="js/screens/play/itemlist/screen-examine.js"></script>
+
+</body>
+</html>
